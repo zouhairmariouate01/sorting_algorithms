@@ -1,10 +1,10 @@
 #include "deck.h"
 #include <stdio.h>
 /**
- *_strcmp - compare two strings
+ *_strcmp - compare two string
  *@str1: string
  *@str2: string
- *Return: 1 str1 and str2 is equal, 0 they are not equal
+ *Return: 1 str1 and str2 is equal, 0 they are not equall
  */
 int _strcmp(const char *str1, char *str2)
 {
@@ -18,7 +18,7 @@ int _strcmp(const char *str1, char *str2)
 			return (0);
 		i++;
 	}
-	if (str1[i] == NULL && str2[i] != NULL)
+	if (str1[i] == '\0' && str2[i] != '\0')
 		return (0);
 	return (1);
 }
