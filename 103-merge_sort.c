@@ -1,10 +1,10 @@
 #include "sort.h"
 #include <stdio.h>
 /**
- *_calloc - this is a calloc function
- *@nmemb: number of elemets
- *@size: bit size of each element
- *Return: pointer to memory assignement
+ *_calloc - this is a calloc functions
+ *@nmemb: number of elemet
+ *@size: bit size of each elements
+ *Return: pointer to memory assignements
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -14,7 +14,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return ('\0');
 	p = malloc(nmemb * size);
-	if (p == NULL )
+	if (p == NULL)
 		return ('\0');
 	for (i = 0; i < (nmemb * size); i++)
 		p[i] = '\0';
@@ -23,7 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 /**
  *merge - make a merge
  *@arr: one from start to mid
- *@tmp: temp array used in merge, was created outside to
+ *@tmp: temp array used in merge, was created outside 
  *optimize reducing the system calls
  *@start: first element position
  *@mid: array middle
@@ -68,10 +68,10 @@ void merge(int *arr, int *tmp, int start, int mid, int end)
 	print_array(&arr[start], left + right);
 }
 /**
- *mergesort - function that sorts an array of integers
+ *mergesort - function that sorts an array of integer
  *in ascending order using the Merge sort algorithm
  *@array: array of integers
- *@tmp: temp array used in merge, was created outside to
+ *@tmp: temp array used in merge, was created outside to merge
  *optimize reducing the system calls
  *@start: fisrt element position
  *@end: last element position
